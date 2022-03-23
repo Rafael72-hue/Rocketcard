@@ -1,0 +1,152 @@
+:root {
+    --bg: #000000;
+    --bg-card: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--bg-card);
+    color: var(--text);
+    font-family: 'Prompt';
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    width: 70%;
+}
+
+.card {
+    width: 400px;
+    height: 650px;
+
+    border: 20px solid var(--bg);
+    border-radius: 50px;
+}
+
+.user_name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+
+    margin: 30px;
+    font-size: 13pt;
+}
+
+.user_name img {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 100%;
+    border: 0.5px solid var(--text);
+
+    padding: 10px;
+    margin:10px;
+}
+
+.user_image {
+    width: 290px;
+    height: 290px;
+
+    border-radius: 100%;
+    border:10px solid var(--img-profile);
+
+    margin: 0 0px 0 18%;
+}
+
+.user_info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width:200px;
+    height:190px;
+    line-height: 30px;
+
+    border-radius: 50px;
+    background: linear-gradient(#000000, #3e383879);
+    padding:20px;
+
+    position:absolute;
+    top:40%;
+    left: 25%;
+}
+
+.user_info img {
+    width: 25px;
+    padding-right: 5px;
+}
+
+.user_info div {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+    top: 72%;
+    left: 35%;
+}
+
+.logo img{
+    width: 35px;
+    height: 35px;
+}
+
+
+.customize_rocketcard, .customize_rocketcard div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.customize_rocketcard button {
+    width: 229px;
+    height: 59.47px;
+
+    cursor: pointer;
+    background-color: var(--border-button);
+    color: var(--text);
+    
+    border:0;
+    border-radius: 15px;
+    margin-top: 30px;
+
+    font-size: 15px;
+    font-family: 'Prompt';
+}
+
+input[type="text"]{
+    width: 229px;
+    height: 59.47px;
+    font-size: 15px;
+    font-family: 'Prompt';
+    border-radius: 15px;
+    margin: 40px auto;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"> 
+    <title>Rocketcard</title>
+</head>
+<body>
+    <main class="container">
+        <div class="content">
+            <span>Compartilhe seu #rocketcard</span>
+            <div class="card" style="border-color: var(--bg);">
+                <div class="card-content">
+                    <div class="user_name">
+                        <img src="./assets/logo.svg">
+                        <span id="user_name">Nome do usuário</span>
+                    </div>
+                    <img class="user_image">
+                    <div class="user_info">
+                        <div>
+                            <img src="./assets/followers.svg" alt="Seguidores">
+                            <span id="user_followers">Seguidores</span>
+                        </div>
+                        <div>
+                            <img src="./assets/following.svg" alt="Seguindo">
+                            <span id="user_following">Seguindo</span>
+                        </div>
+                        <div>
+                            <img src="./assets/repository.svg" alt="Repositórios">
+                            <span id="user_repository">Repositórios</span>
+                        </div>
+                        <div>
+                            <img src="./assets/company.svg" alt="Empresa">
+                            <span id="user_company">Empresa</span>
+                        </div>
+                        <div>
+                            <img src="./assets/location.svg" alt="Localização">
+                            <span id="user_location">Localização</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="./assets/logo.svg">
+                    <span>ROCKETCARD</span>
+                </div>
+            </div>
+            <div class="customize_rocketcard" >
+                <div >
+                    <span>Busque o seu perfil</span>
+                    <input type="text" placeholder="digite seu usuário">
+                </div>
+                <div>
+                    <span>Customizar Rocketcard</span>
+                    <button onclick="changeBg()">Gerar background</button>
+                </div>
+            </div>
+        </div>
+    </main>
+        <script src="script.js"></script>
+</body>
+</html>
